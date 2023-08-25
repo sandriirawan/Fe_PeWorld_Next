@@ -1,0 +1,372 @@
+.container {
+  width: 1140px;
+  height: auto;
+}
+
+.card-container {
+  width: 1140px;
+  height: auto;
+  margin-bottom: 70px;
+}
+
+.wrap-profile {
+  border-radius: 8px;
+  margin-top: -70px;
+}
+
+.foto-sampul {
+  width: 1140px;
+  height: 200px;
+  background-color: #5e50a1;
+  border-radius: 8px 8px 0px 0px;
+}
+
+.edit {
+  width: 150px;
+  background-color: unset;
+  margin-left: 980px;
+  margin-top: 10px;
+  color: white;
+}
+
+.edit:hover {
+  color: white;
+}
+
+.foto-profile img {
+  margin-left: 70px;
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  margin-top: -70px;
+}
+
+.data-diri {
+  margin-top: 10px;
+  margin-left: 70px;
+}
+.posisi {
+  margin-top: 10px;
+}
+
+.address {
+  margin-top: 13px;
+}
+
+.status-pekerjaan {
+  margin-top: 10px;
+}
+
+.deskripsi {
+  margin: 0;
+  padding: 0;
+  text-align: justify;
+}
+
+.wrap-button {
+  margin-top: 25px;
+}
+
+.buttonHire {
+  background-color: #5e50a1;
+  color: white;
+  width: 297px;
+  height: 50px;
+  border-radius: 4px;
+}
+
+.skill {
+  margin-top: 40px;
+}
+
+.wrap-skill {
+  margin-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  width: 30%;
+}
+
+.wrap-skill button {
+  text-align: center;
+  padding: 5px;
+  flex: 1 0 50px;
+  color: white;
+  border: 1px solid #fbb017;
+  background-color: #fbb01799;
+  border-radius: 4px;
+  margin-left: 0;
+}
+
+.sosial-media {
+  display: flex;
+  flex-direction: column;
+  margin-top: 43px;
+}
+
+.sosial-media .bi {
+  font-size: 20px;
+  color: #9b9b9b;
+  margin-bottom: 24px;
+}
+
+.sosial-media a {
+  font-size: 20px;
+  color: #9b9b9b;
+  margin-left: 20px;
+  text-decoration: none;
+}
+
+.button-link {
+  margin-top: 50px;
+}
+.button-link button {
+  color: #9b9b9b;
+}
+
+.tab-content {
+  padding: 20px;
+}
+
+.nav-pills .nav-link.active {
+  background-color: transparent;
+  color: black;
+  border-bottom: 4px solid #5e50a1;
+}
+
+.card-pengalaman {
+  display: flex;
+  align-items: center;
+  padding: 30px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0px 1px 20px 0px #c5c5c540;
+  margin-bottom: 20px;
+  height: auto;
+}
+
+.card-pengalaman img {
+  width: 100px;
+  height: auto;
+  margin-right: 20px;
+  border-radius: 50%;
+}
+
+.card-content-pengalaman {
+  display: flex;
+  align-items: center;
+  flex: 1;
+}
+
+.card-content-pengalaman .content-pengalaman {
+  flex: 1;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.card-content-pengalaman h2 {
+  margin: 0;
+}
+
+.card-content-pengalaman {
+  width: 100%;
+}
+
+.card-pengalaman img {
+  flex-shrink: 0;
+}
+
+.card-title {
+  padding-bottom: 10px;
+}
+
+.card-body-penagalaman {
+  flex: 1;
+}
+
+.card-job {
+  color: #9b9b9b;
+}
+
+.card-text {
+  margin: 0;
+  overflow-wrap: break-word;
+  max-width: 100%;
+}
+
+.wrap-card {
+  padding-bottom: 100px;
+}
+
+.photo {
+  width: 200px;
+  height: 130px;
+  margin-top: 15px;
+}
+
+.cardContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: center;
+  text-align: center;
+  border-radius: 4px;
+  padding: 0;
+}
+
+.card {
+  width: 240px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  margin-left: 0;
+  position: relative;
+}
+
+.closeIcon {
+  position: absolute;
+  top: 140px;
+  right: 0;
+  padding: 5px;
+  cursor: pointer;
+  font-size: 24px;
+  color: red;
+}
+
+@media (max-width: 600px) {
+  .container {
+    width: 100%;
+  }
+
+  .card-container {
+    width: 100%;
+    height: auto;
+    margin-bottom: 30px;
+  }
+
+  .wrap-profile {
+    margin-top: -30px;
+  }
+
+  .foto-sampul {
+    width: 100%;
+    border-radius: 8px 8px 0 0;
+  }
+
+  .foto-profile img {
+    margin-left: 20px;
+    width: 100px;
+    height: 100px;
+    margin-top: -50px;
+  }
+
+  .data-diri {
+    margin-top: 10px;
+    margin-left: 0;
+    padding: 0 10px;
+  }
+
+  .buttonHire {
+    width: 100%;
+  }
+
+  .wrap-skill button {
+    margin-top: 10px;
+    margin-right: 5px;
+    margin-bottom: 10px;
+  }
+
+  .sosial-media a {
+    font-size: 14px;
+  }
+
+  .tab-content {
+    padding: 10px;
+  }
+
+  .nav-pills .nav-link {
+    font-size: 16px;
+  }
+
+  .card-pengalaman {
+    padding: 15px;
+  }
+
+  .card-pengalaman img {
+    width: 80px;
+    margin-right: 15px;
+  }
+
+  .card-content-pengalaman h2 {
+    font-size: 18px;
+  }
+
+  .cardContainer {
+    justify-content: center;
+  }
+
+  .card {
+    width: 100%;
+    margin-left: 30px;
+    margin-bottom: 20px;
+  }
+
+  .photo {
+    width: 100%;
+    height: auto;
+    margin: 0;
+  }
+
+  .closeIcon {
+    top: 0;
+  }
+
+  .card-pengalaman {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: auto;
+    width: 100%;
+  }
+  .edit{
+    margin-top: 0;
+    padding: 10px;
+    margin-left: 210px;
+  }
+  .wrap-skill {
+    margin-top: 20px;
+    width: 100%;
+  }
+  
+  .wrap-skill button {
+    margin-left: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+  .card-content-pengalaman {
+    flex-direction: column; 
+    align-items: flex-start; 
+    align-items: center;
+    text-align: center;
+  }
+
+  .card-pengalaman img {
+    margin-right: 0; 
+    margin-bottom: 10px; 
+  }
+
+  .card-job {
+    color: #9b9b9b;
+    max-width: 100%; 
+    overflow-wrap: break-word; 
+  }
+  
+  .card-text {
+    margin: 0;
+    max-width: 100%; 
+    overflow-wrap: break-word; 
+}
+
+}

@@ -1,0 +1,114 @@
+.sampul {
+    width: 100%;
+    height: 200px;
+    background-color: #5e50a1;
+  }
+
+  .profileCard {
+    margin-top: -150px;
+    width: 357px;
+    height: 379px;
+    border-radius: 8px;
+    border-radius: 8px;
+  }
+
+  .fotoProfile {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+  }
+
+  .fotoProfile img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  }
+
+  .edit {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    font-size: 22px;
+    color: #9ea0a5;
+    margin-left: -20px;
+  }
+
+  .edit a {
+    text-decoration: none;
+    font-size: 22px;
+    color: #9ea0a5;
+    margin-left: 5px;
+  }
+
+  .dataDiri {
+    margin: 20px 25px 20px 25px;
+  }
+
+  .posisi {
+    margin-top: 18px;
+  }
+
+  .address {
+    margin-top: 13px;
+    color: #9b9b9b;
+  }
+
+
+  .buttonContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 25px;
+  }
+
+  .buttonSimpan {
+    width: 357px;
+    height: 50px;
+    text-align: center;
+    color: white;
+    background-color: #5e50a1;
+  }
+
+  .buttonBatal {
+    margin-top: 15px;
+    width: 357px;
+    height: 50px;
+    text-align: center;
+    background-color: white;
+    color: #5e50a1;
+    border: 1px solid #5e50a1;
+  }
+
+  .buttonSimpan:hover {
+    color: white;
+  }
+
+  .buttonBatal:hover {
+    color: #5e50a1;
+  }
+
+  /* data diri */
+  .wrapCard {
+    width: 753px;
+    height: 1130px;
+    margin-bottom: 250px;
+    margin-top: -150px;
+  }
+
+  .titleData{
+    font-weight: 600;
+    size: 22px;
+    line-height: 56px;
+    margin-top: 30px;
+    margin-left: 30px;
+  }
+
+  .garis {
+    border: 1px solid #9b9b9b;
+    width: 753px;
+    margin-top: 20px;
+    margin-left: -30px;
+  }
+
+

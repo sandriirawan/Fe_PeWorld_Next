@@ -1,0 +1,131 @@
+.wrapProfile {
+    width: 100%;
+    border-radius: 8px;
+    margin-top: 0;
+    margin-bottom: 100px;
+    align-items: center;
+    text-align: center;
+  }
+
+  .card {
+    height: 700px;
+  }
+
+  .sampul {
+    width: 100%;
+    height: 200px;
+    margin-top: 70px;
+    background-color: #5e50a1;
+    border-radius: 8px 8px 0px 0px;
+  }
+
+  .profile {
+    margin-top: -60px;
+  }
+
+  .profile img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+  }
+
+  .dataDiri {
+    margin-top: 10px;
+  }
+  .posisi {
+    margin-top: 10px;
+  }
+
+  .bidang {
+    margin-top: 10px;
+  }
+
+  .address {
+    margin-top: 13px;
+  }
+
+  .status-pekerjaan {
+    margin-top: 10px;
+  }
+
+  .deskripsi {
+    margin: 0;
+    padding: 0 200px;
+  }
+
+  .wrapButton {
+    margin-top: 25px;
+  }
+
+  .buttonHire {
+    background-color: #5e50a1;
+    color: white;
+    width: 297px;
+    height: 50px;
+    border-radius: 8px;
+  }
+
+  .buttonHire:hover {
+    color: white;
+  }
+
+  .sosialMedia {
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+    margin-left: 420px;
+    text-align: left;
+  }
+
+  .sosialMedia .bi {
+    font-size: 20px;
+    color: #9b9b9b;
+    margin-bottom: 24px;
+  }
+
+  .sosialMedia a {
+    font-size: 20px;
+    color: #9b9b9b;
+    margin-left: 20px;
+    text-decoration: none;
+  }
+
+  @media (max-width: 768px) {
+    .wrapProfile {
+      text-align: left;
+    }
+
+    .deskripsi {
+        margin: 0;
+        padding: 0 0;
+      }
+  
+    .sampul {
+      margin-top: 40px;
+    }
+  
+    .profile {
+      margin-top: 10px;
+      margin-right: 20px;
+    }
+  
+    .dataDiri {
+      margin-top: 20px;
+    }
+  
+    .buttonHire {
+      width: 100%;
+    }
+  
+    .sosialMedia {
+      margin-left: 0;
+    }
+  
+    .sosialMedia .bi {
+      margin-bottom: 10px;
+    }
+  
+    .sosialMedia a {
+      margin-left: 0;
+    }
+  }

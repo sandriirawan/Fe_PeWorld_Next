@@ -1,0 +1,114 @@
+    .cardChat{
+      width: 320px; 
+      height: 583px;
+    }
+    
+    .cardTitle {
+      font-size: 24px;
+      font-weight: 600;
+      line-height: 21.79px;
+      margin-top: 10px;
+    }
+
+    .garis {
+      border: 1px solid #9b9b9b;
+      width: 319px;
+      margin-top: 34px;
+      margin-left: -20px;
+    }
+    .warpChat {
+      display: flex;
+      align-items: center;
+      margin-top: 20px;
+    }
+
+    .warpChat img {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      margin-right: 20px;
+    }
+    .pesan {
+      display: flex;
+      flex-direction: column;
+    }
+    .nama {
+      font-weight: 600;
+      font-size: 16px;
+      line-height: 21.79px;
+    }
+
+    .pesanText {
+      color: #9b9b9b;
+    }
+
+    .cardChat2 {
+      width: 750px;
+      height: 583px;
+      position: relative;
+    }
+
+    .warpChat2 img {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      margin-right: 14px;
+    }
+
+    .garis2 {
+      border: 1px solid #9b9b9b;
+      width: 750px;
+      margin-top: 24px;
+      margin-left: -20px;
+    }
+
+    .formControl {
+      width: 660px;
+      height: 40px;
+      border-radius: 24px;
+    }
+
+    .formGroup {
+      position: absolute;
+      bottom: 0;
+      display: flex;
+    }
+
+    .btnSend {
+      background-color: #5e50a1;
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      color: #e1e8ed;
+      margin-left: 10px;
+    }
+
+    .btnSend:hover {
+      color: #e1e8ed;
+    }
+
+    @media (max-width: 768px) {
+      .cardChat {
+        width: 100%;
+      }
+    
+      .cardChat2 {
+        margin-top: 20px;
+        width: 100%;
+      }
+    
+      .pesan {
+        margin-top: 10px;
+      }
+    
+      .formControl {
+        width: 275px;
+      }
+    
+      .garis {
+        width: 110%;
+      }
+      .garis2 {
+        width: 110%;
+      }
+    }

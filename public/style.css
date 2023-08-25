@@ -1,0 +1,50 @@
+.navbar {
+    padding: 20px 0;
+    background-color: white;
+  }
+  .btn-masuk {
+    margin-right: 10px;
+    color: #5e50a1;
+    border: 1px solid #5e50a1;
+  }
+
+  .btn-masuk:hover {
+    color: #5e50a1;
+  }
+
+  .btn-daftar {
+    color: white;
+    background-color: #5e50a1;
+  }
+
+  .btn-daftar:hover {
+    color: white;
+  }
+
+  @media (max-width: 768px) {
+    /* navbar */
+    .btn-masuk {
+      margin-top: 25px;
+      padding: 5px 50px;
+    }
+
+    .btn-daftar {
+      margin-top: 20px;
+      padding: 5px 50px;
+    }
+    .navbar-collapse {
+      position: fixed;
+      top: 0;
+      left: -300px;
+      width: 200px;
+      height: 100%;
+      background-color: #f8f9fa;
+      padding: 20px;
+      transition: left 0.3s;
+      z-index: 100;
+    }
+
+    .navbar-collapse.show {
+      left: 0;
+    }
+  }

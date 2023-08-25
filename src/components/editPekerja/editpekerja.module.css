@@ -1,0 +1,309 @@
+.sampul {
+  width: 100%;
+  height: 200px;
+  background-color: #5e50a1;
+}
+
+.wrap {
+  margin-top: -150px;
+  width: 357px;
+  height: auto;
+  border-radius: 8px;
+  border-radius: 8px;
+}
+
+.fotoProfile {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+}
+
+.fotoProfile img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+}
+
+.edit {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  font-size: 22px;
+  color: #9ea0a5;
+  margin-left: -20px;
+}
+
+.edit a {
+  text-decoration: none;
+  font-size: 22px;
+  color: #9ea0a5;
+  margin-left: 5px;
+}
+
+.dataDiri {
+  margin: 20px 25px 20px 25px;
+}
+
+.posisi {
+  margin-top: 18px;
+}
+
+.address {
+  margin-top: 13px;
+  color: #9b9b9b;
+}
+
+.pekerjaan {
+  margin-top: 13px;
+  color: #9b9b9b;
+}
+
+.buttonContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 25px;
+}
+
+.buttonSimpan {
+  width: 357px;
+  height: 50px;
+  text-align: center;
+  color: white;
+  background-color: #5e50a1;
+}
+
+.buttonBatal {
+  margin-top: 15px;
+  width: 357px;
+  height: 50px;
+  text-align: center;
+  color: #5e50a1;
+  border: 1px solid #5e50a1;
+}
+
+.buttonSimpan:hover {
+  color: white;
+}
+
+.buttonBatal:hover {
+  color: #5e50a1;
+}
+
+/* data diri */
+.cardData {
+  width: 753px;
+  height: 1150px;
+  margin-top: -150px;
+}
+
+.titleData {
+  font-weight: 600;
+  size: 22px;
+  line-height: 56px;
+  margin-top: 30px;
+  margin-left: 30px;
+}
+
+.garis {
+  border: 1px solid #9b9b9b;
+  width: 753px;
+  margin-top: 20px;
+  margin-left: -30px;
+}
+
+/* data diri end*/
+
+/* skill */
+.cardSkill {
+  width: 753px;
+  height: auto;
+  margin-top: 50px;
+}
+
+.titleSkill {
+  font-weight: 600;
+  size: 22px;
+  line-height: 56px;
+  margin-top: 30px;
+  margin-left: 30px;
+}
+
+.btnSkill {
+  color: white;
+  background-color: #fbb017;
+}
+
+.btnSkill:hover {
+  color: white;
+  background-color: #ffaa00;
+}
+
+/* skill end*/
+
+/* pengalaman */
+.cardPengalaman {
+  width: 753px;
+  height: auto;
+  margin-top: 50px;
+  margin-bottom: 30px;
+}
+
+.titlePengalaman {
+  font-weight: 600;
+  size: 22px;
+  line-height: 56px;
+  margin-top: 30px;
+  margin-left: 30px;
+}
+
+.btnPengalaman {
+  color: #fbb017;
+  border: 1px solid #fbb017;
+  width: 660px;
+  height: 50px;
+  border-radius: 8px;
+}
+
+.btnPengalaman:hover {
+  background-color: #fbb017;
+  color: white;
+}
+
+/* pengalaman end*/
+
+/* Portofolio */
+.cardPortofolio {
+  width: 753px;
+  height: 850px;
+  margin-top: 50px;
+  margin-bottom: 70px;
+}
+
+.titlePortofolio {
+  font-weight: 600;
+  size: 22px;
+  line-height: 56px;
+  margin-top: 30px;
+  margin-left: 30px;
+}
+
+.uploadPhotoContainer {
+  width: 660px;
+  height: 348px;
+  border: 1px solid #ccc;
+  padding: 0;
+}
+
+.iconDownload {
+  color: #9b9b9b;
+  text-align: center;
+  font-size: 100px;
+}
+
+.uploadPhotoContainer {
+  position: relative;
+  border: 1px dashed #9b9b9b;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.uploadPhotoContainer input[type="file"] {
+  position: absolute;
+  text-align: center;
+  left: 0;
+  top: 0;
+  opacity: 0;
+  cursor: pointer;
+  width: 100%;
+  height: 100%;
+}
+
+.btnPortofolio {
+  color: #fbb017;
+  border: 1px solid #fbb017;
+  width: 660px;
+  height: 50px;
+  border-radius: 8px;
+}
+
+.btnPortofolio:hover {
+  background-color: #fbb017;
+  color: white;
+}
+
+/* Portofolio end*/
+
+.wrapCard {
+  width: 750px;
+  padding: 0 20px;
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 0 10px;
+  }
+
+  .profile,
+  .col-md-4 {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .sampul {
+    height: 150px;
+  }
+
+  .wrap {
+    width: 100%;
+    height: auto;
+    margin-top: -85px;
+  }
+
+  .fotoProfile img {
+    width: 80px;
+    height: 80px;
+  }
+
+  .dataDiri {
+    margin: 10px 15px;
+  }
+
+  .titleData {
+    font-size: 20px;
+  }
+
+  .cardData,
+  .cardSkill,
+  .cardPengalaman,
+  .cardPortofolio {
+    width: 100%;
+    margin-top: 20px;
+  }
+
+  .garis {
+    width: 100%;
+  }
+
+  .btnSkill,
+  .btnPengalaman,
+  .btnPortofolio {
+    width: 100%;
+  }
+
+  .uploadPhotoContainer {
+    width: 100%;
+  }
+
+  .iconDownload {
+    font-size: 80px;
+  }
+  .wrapCard {
+    width: 100%;
+    padding: 0 20px;
+  }
+
+}

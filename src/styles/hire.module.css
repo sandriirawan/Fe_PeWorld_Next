@@ -1,0 +1,71 @@
+ .customCard {
+    width: 357px;
+    height: 692px;
+  }
+
+  .profile img {
+    margin-left: 70px;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+  }
+
+  .dataDiri {
+    margin-top: 10px;
+  }
+  .posisi {
+    margin-top: 10px;
+  }
+
+  .address {
+    margin-top: 13px;
+  }
+
+  .deskripsi {
+    margin: 0;
+    padding: 0;
+    text-align: justify;
+  }
+
+  .wrapSkill {
+    margin-top: 10px;
+    padding: 0;
+  }
+
+  .wrapSkill button {
+    margin-right: 10px;
+    margin-top: 20px;
+    text-align: justify;
+    padding: 5px 10px;
+    color: white;
+    border: 1px solid #fbb017;
+    background-color: #fbb01799;
+    border-radius: 4px;
+  }
+
+  .cardHire {
+    width: 753px;
+    height: 731px;
+  }
+
+  .title {
+    margin-left: 30px;
+  }
+
+
+  .formControl {
+    width: 570px;
+    height: 50px;
+  }
+
+  .btnHire {
+    background-color: #fbb017;
+    color: white;
+    width: 570px;
+    height: 50px;
+    border-radius: 8px;
+  }
+
+  .btnHire:hover {
+    color: white;
+  }
