@@ -52,7 +52,7 @@ function FormPortofolio() {
     formDataToSend.append("photo", formData.photo);
 
     axios
-      .post(`https://be-peworld.vercel.app/portofolio`, formDataToSend)
+      .post(`${process.env.NEXT_PUBLIC_REACT_APP_API_KEY}/portofolio`, formDataToSend)
       .then((response) => {
         console.log("Create portofolio Success", response.data);
         swal("Success", "Portofolio berhasil ditambahkan!", "success");

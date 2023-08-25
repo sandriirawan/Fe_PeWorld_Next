@@ -7,7 +7,7 @@ export function getDetailPerekrut() {
     try {
       const userId = Cookies.get("id");
       const response = await axios.get(
-        `https://be-peworld.vercel.app/perekrut/profile/${userId}`
+        `${process.env.NEXT_PUBLIC_REACT_APP_API_KEY}/perekrut/profile/${userId}`
       );
       const result = response.data.data[0];
       dispatch({ type: "GET_DETAIL_PEREKRUT", payload: result });

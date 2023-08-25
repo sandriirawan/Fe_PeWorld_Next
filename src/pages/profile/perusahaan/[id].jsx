@@ -66,7 +66,7 @@ export async function getServerSideProps(context) {
   const { id } = context.query;
 
   try {
-    const response = await axios.get(`https://be-peworld.vercel.app/perekrut/profile/${id}`);
+    const response = await axios.get(`${process.env.NEXT_PUBLIC_REACT_APP_API_KEY}/perekrut/profile/${id}`);
     const userData = response.data.data[0];
     return {
       props: {

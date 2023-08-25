@@ -7,7 +7,7 @@ export function getDetailPekerja() {
     try {
       const userId = Cookies.get("id");
       const response = await axios.get(
-        `https://be-peworld.vercel.app/pekerja/profile/${userId}`
+        `${process.env.NEXT_PUBLIC_REACT_APP_API_KEY}/pekerja/profile/${userId}`
       );
       const result = response.data.data[0];
       dispatch({ type: "GET_DETAIL_PEKERJA", payload: result });

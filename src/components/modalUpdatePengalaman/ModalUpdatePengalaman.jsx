@@ -23,7 +23,7 @@ function ModalUpdatePengalaman({id}) {
   useEffect(() => {
     const getData = async () => {
       try {
-        const response = await axios.get(`https://be-peworld.vercel.app/pengalaman/${userId}`);
+        const response = await axios.get(`${process.env.NEXT_PUBLIC_REACT_APP_API_KEY}/pengalaman/${userId}`);
         setData(response.data.data[0]);
       } catch (error) {
         console.error("Error fetching user data:", error);
@@ -69,7 +69,7 @@ function ModalUpdatePengalaman({id}) {
       tahun_keluar: endDate ? endDate.toISOString() : null,
     };
     try {
-      const response = await axios.put(`https://be-peworld.vercel.app/pengalaman/${id}`, dataToSend);
+      const response = await axios.put(`${process.env.NEXT_PUBLIC_REACT_APP_API_KEY}/pengalaman/${id}`, dataToSend);
       console.log(response.data);
       swal("Success", "Pengalaman kerja berhasil ditambahkan!", "success").then(() => {
         window.location.reload();

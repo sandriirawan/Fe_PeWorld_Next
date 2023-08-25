@@ -41,7 +41,7 @@ function FormPengalaman() {
     };
     try {
       const response = await axios.post(
-        `https://be-peworld.vercel.app/pengalaman`,
+        `${process.env.NEXT_PUBLIC_REACT_APP_API_KEY}/pengalaman`,
         dataToSend
       );
       console.log(response.data);

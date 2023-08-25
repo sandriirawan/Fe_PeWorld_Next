@@ -24,8 +24,8 @@ const Login = () => {
     e.preventDefault();
 
     axios
-      .post(`https://be-peworld.vercel.app/users/login`, data)
-      .then((result) => {
+    .post(`${process.env.NEXT_PUBLIC_REACT_APP_API_KEY}/users/login`, data)
+    .then((result) => {
         Cookies.set("token", result.data.data.token_user);
         Cookies.set("role", result.data.data.role);
         Cookies.set("id", result.data.data.id);

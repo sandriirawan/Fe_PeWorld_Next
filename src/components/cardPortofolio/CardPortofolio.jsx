@@ -14,7 +14,7 @@ function CardPortofolio() {
 
   useEffect(() => {
     axios
-      .get(`https://be-peworld.vercel.app/portofolio/${id}`)
+      .get(`${process.env.NEXT_PUBLIC_REACT_APP_API_KEY}/portofolio/${id}`)
       .then((response) => {
         setData(response.data.data);
       })
@@ -49,7 +49,7 @@ function CardPortofolio() {
     }).then((willDelete) => {
       if (willDelete) {
         axios
-          .delete(`https://be-peworld.vercel.app/portofolio/${id}`)
+          .delete(`${process.env.NEXT_PUBLIC_REACT_APP_API_KEY}/portofolio/${id}`)
           .then((response) => {
             Swal("Berhasil!", "Data telah dihapus.", "success");
             window.location.reload();

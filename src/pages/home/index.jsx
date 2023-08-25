@@ -204,7 +204,7 @@ function Home({ data }) {
 export async function getStaticProps() {
   let data = [];
   try {
-    const response = await axios.get("https://be-peworld.vercel.app/users");
+    const response = await axios.get(`${process.env.NEXT_PUBLIC_REACT_APP_API_KEY}/users`);
     data = response.data.data;
   } catch (error) {
     console.error("Error fetching data:", error);

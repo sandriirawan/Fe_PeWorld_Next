@@ -12,7 +12,7 @@ function Perekrut() {
   useEffect(() => {
     if (userId) {
     axios
-    .get(`https://be-peworld.vercel.app/perekrut/profile/${userId}`)
+    .get(`${process.env.NEXT_PUBLIC_REACT_APP_API_KEY}/perekrut/profile/${userId}`)
     .then((response) => {
       try {
         console.log(response.data)

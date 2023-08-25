@@ -11,7 +11,7 @@ function CardPerekrut() {
 
     useEffect(() => {
       axios
-        .get(`https://be-peworld.vercel.app/perekrut`)
+        .get(`${process.env.NEXT_PUBLIC_REACT_APP_API_KEY}/perekrut`)
         .then((response) => {
           setData(response.data.data); 
         })

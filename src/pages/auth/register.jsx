@@ -40,7 +40,7 @@ function Register() {
         delete data.nama_perusahaan;
       }
   
-      await axios.post(`https://be-peworld.vercel.app/users/register/${role}`, data);
+      await axios.post(`${process.env.NEXT_PUBLIC_REACT_APP_API_KEY}/users/register/${role}`, data);
       swal("Success!", "Registration successful!", "success");
       console.log("Registration successful!");
       router.push(`/auth/login`);

@@ -16,7 +16,7 @@ function PekerjaProfile() {
 
   useEffect(() => {
     axios
-      .get(`https://be-peworld.vercel.app/pekerja/profile/${id}`)
+      .get(`${process.env.NEXT_PUBLIC_REACT_APP_API_KEY}/pekerja/profile/${id}`)
       .then((response) => {
         try {
           setUserData(response.data.data[0]);
@@ -35,7 +35,7 @@ function PekerjaProfile() {
 
   useEffect(() => {
     axios
-      .get(`https://be-peworld.vercel.app/pengalaman/${id}`)
+      .get(`${process.env.NEXT_PUBLIC_REACT_APP_API_KEY}/pengalaman/${id}`)
       .then((response) => {
         setPengalamanData(response.data.data);
       })
@@ -80,7 +80,7 @@ function PekerjaProfile() {
 
   useEffect(() => {
     axios
-      .get(`https://be-peworld.vercel.app/portofolio/${id}`)
+      .get(`${process.env.NEXT_PUBLIC_REACT_APP_API_KEY}/portofolio/${id}`)
       .then((response) => {
         setData(response.data.data);
       })

@@ -25,7 +25,7 @@ function EditPekerja() {
     const getdata = async () => {
       if (userId) {
         await axios
-          .get(`https://be-peworld.vercel.app/pekerja/profile/${userId}`)
+          .get(`${process.env.NEXT_PUBLIC_REACT_APP_API_KEY}/pekerja/profile/${userId}`)
           .then((response) => {
             setData(response.data.data[0]);
             setPhoto(response.data.data[0].foto_pekerja)
@@ -77,7 +77,7 @@ function EditPekerja() {
     
 
     await axios
-      .put(`https://be-peworld.vercel.app/pekerja/profile/edit/${userId}`, formData)
+      .put(`${process.env.NEXT_PUBLIC_REACT_APP_API_KEY}/pekerja/profile/edit/${userId}`, formData)
       .then((response) => {
         swal("Data berhasil disimpan!")
         .then(() => {

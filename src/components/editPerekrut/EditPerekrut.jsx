@@ -20,7 +20,7 @@ function EditPerekrut() {
     const getdata = async () => {
       if (userId) {
         await axios
-          .get(`https://be-peworld.vercel.app/perekrut/profile/${userId}`)
+          .get(`${process.env.NEXT_PUBLIC_REACT_APP_API_KEY}/perekrut/profile/${userId}`)
           .then((response) => {
             setData(response.data.data[0]);
             setPhoto(response.data.data[0].foto_perusahaan)
@@ -73,7 +73,7 @@ function EditPerekrut() {
     formData.append("foto_perusahaan", getPhoto);
 
     axios
-      .put(`https://be-peworld.vercel.app/perekrut/profile/edit/${userId}`, formData)
+      .put(`${process.env.NEXT_PUBLIC_REACT_APP_API_KEY}/perekrut/profile/edit/${userId}`, formData)
       .then((response) => {
         // swal("Data berhasil disimpan!")
         router.push(`/profile/${userId}`); 

@@ -12,7 +12,7 @@ function Formskill() {
   useEffect(() => {
     const users_id = Cookies.get("id");
     axios
-      .get(`https://be-peworld.vercel.app/skill/${users_id}`)
+      .get(`${process.env.NEXT_PUBLIC_REACT_APP_API_KEY}/skill/${users_id}`)
       .then((response) => {
         const existingSkills = response.data.data.map(
           (skill) => skill.nama_skill
@@ -36,7 +36,7 @@ function Formskill() {
     const newSkillsArray = skillInput.split(",").map((skill) => skill.trim());
 
     axios
-      .put(`https://be-peworld.vercel.app/skill/${users_id}`, {
+      .put(`${process.env.NEXT_PUBLIC_REACT_APP_API_KEY}/skill/${users_id}`, {
         nama_skill: newSkillsArray,
       })
       .then((response) => {

@@ -17,7 +17,7 @@ function CardPengalaman() {
 
   useEffect(() => {
     axios
-      .get(`https://be-peworld.vercel.app/pengalaman/${id}`)
+      .get(`${process.env.NEXT_PUBLIC_REACT_APP_API_KEY}/pengalaman/${id}`)
       .then((response) => {
         setPengalamanData(response.data.data);
       })
@@ -53,7 +53,7 @@ const currentPengalamanData = pengalamanData ? pengalamanData.slice(indexOfFirst
     }).then((willDelete) => {
       if (willDelete) {
         axios
-          .delete(`https://be-peworld.vercel.app/pengalaman/${id}`)
+          .delete(`${process.env.NEXT_PUBLIC_REACT_APP_API_KEY}/pengalaman/${id}`)
           .then((response) => {
             console.log(response)
             Swal("Berhasil!", "Data telah dihapus.", "success");

@@ -12,7 +12,7 @@ function CardPekerja() {
 
   useEffect(() => {
     axios
-      .get(`https://be-peworld.vercel.app/pekerja`)
+      .get(`${process.env.NEXT_PUBLIC_REACT_APP_API_KEY}/pekerja`)
       .then((response) => {
         setData(response.data.data);
       })
