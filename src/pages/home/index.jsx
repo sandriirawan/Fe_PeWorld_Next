@@ -6,7 +6,7 @@ import React, { useEffect, useState } from "react";
 import axios from "axios";
 import Pagination from "react-bootstrap/Pagination";
 
-function Home({ data }) {
+function Home() {
   const router = useRouter();
   const fallbackImage = "/Make Your Day.jpg";
 
@@ -24,6 +24,20 @@ function Home({ data }) {
   const [filteredData, setFilteredData] = useState([]);
   const [activePage, setActivePage] = useState(1);
   const itemsPerPage = 10;
+  const [data, setData] = useState([]);
+
+  useEffect(() => {
+    async function fetchData() {
+      try {
+        const response = await axios.get(`${process.env.NEXT_PUBLIC_REACT_APP_API_KEY}/users`);
+        setData(response.data.data);
+      } catch (error) {
+        console.error("Error fetching data:", error);
+      }
+    }
+
+    fetchData();
+  }, []);
 
   const getProfileImage = (data) => {
     if (data.role === "perekrut") {
@@ -201,20 +215,20 @@ function Home({ data }) {
   );
 }
 
-export async function getStaticProps() {
-  let data = [];
-  try {
-    const response = await axios.get(`${process.env.NEXT_PUBLIC_REACT_APP_API_KEY}/users`);
-    data = response.data.data;
-  } catch (error) {
-    console.error("Error fetching data:", error);
-  }
+// export async function getStaticProps() {
+//   let data = [];
+//   try {
+//     const response = await axios.get(`${process.env.NEXT_PUBLIC_REACT_APP_API_KEY}/users`);
+//     data = response.data.data;
+//   } catch (error) {
+//     console.error("Error fetching data:", error);
+//   }
 
-  return {
-    props: {
-      data,
-    },
-  };
-}
+//   return {
+//     props: {
+//       data,
+//     },
+//   };
+// }
 
 export default Home;
