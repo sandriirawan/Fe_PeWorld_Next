@@ -7,7 +7,6 @@ import ModalUpdatePengalaman from "../modalUpdatePengalaman/ModalUpdatePengalama
 import Swal from "sweetalert";
 import Button from "react-bootstrap/Button";
 
-
 function CardPengalaman() {
   const [pengalamanData, setPengalamanData] = useState([]);
   const [currentPage, setCurrentPage] = useState(1);
@@ -41,7 +40,9 @@ function CardPengalaman() {
 
   const indexOfLastItem = currentPage * itemsPerPage;
   const indexOfFirstItem = indexOfLastItem - itemsPerPage;
-const currentPengalamanData = pengalamanData ? pengalamanData.slice(indexOfFirstItem, indexOfLastItem) : []
+  const currentPengalamanData = pengalamanData
+    ? pengalamanData.slice(indexOfFirstItem, indexOfLastItem)
+    : [];
 
   const handleDelete = (id) => {
     Swal({
@@ -53,11 +54,17 @@ const currentPengalamanData = pengalamanData ? pengalamanData.slice(indexOfFirst
     }).then((willDelete) => {
       if (willDelete) {
         axios
-          .delete(`${process.env.NEXT_PUBLIC_REACT_APP_API_KEY}/pengalaman/${id}`)
+          .delete(
+            `${process.env.NEXT_PUBLIC_REACT_APP_API_KEY}/pengalaman/${id}`
+          )
           .then((response) => {
-            console.log(response)
+            const updatedPengalamanData = pengalamanData.filter(
+              (item) => item.id !== id
+            );
+            setPengalamanData(updatedPengalamanData);
+
             Swal("Berhasil!", "Data telah dihapus.", "success");
-            window.location.reload();
+            
           })
           .catch((error) => {
             console.error("Error deleting data:", error);
@@ -72,7 +79,11 @@ const currentPengalamanData = pengalamanData ? pengalamanData.slice(indexOfFirst
 
   const pageNumbers = [];
   if (pengalamanData) {
-    for (let number = 1; number <= Math.ceil(pengalamanData.length / itemsPerPage); number++) {
+    for (
+      let number = 1;
+      number <= Math.ceil(pengalamanData.length / itemsPerPage);
+      number++
+    ) {
       pageNumbers.push(number);
     }
   }
@@ -114,15 +125,15 @@ const currentPengalamanData = pengalamanData ? pengalamanData.slice(indexOfFirst
               </div>
             </div>
             <div className="d-flex mt-2">
-            <Button className="btn btn-danger mr-2">
-              <i
-                className={`bi bi-trash `}
-                onClick={() => handleDelete(item.id)}
-              ></i>
-            </Button>
-            <ModalUpdatePengalaman id={item.id}  />
+              <Button className="btn btn-danger mr-2">
+                <i
+                  className={`bi bi-trash `}
+                  onClick={() => handleDelete(item.id)}
+                ></i>
+              </Button>
+              <ModalUpdatePengalaman id={item.id} />
+            </div>
           </div>
-        </div>
         </div>
       ))}
 

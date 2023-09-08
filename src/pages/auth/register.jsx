@@ -5,6 +5,8 @@ import Link from "next/link";
 import Head from "next/head";
 import swal from 'sweetalert';
 import { useRouter } from "next/router";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 
 
@@ -34,20 +36,21 @@ function Register() {
     try {
       const { role, ...data } = formData;
   
-      // Jika peran adalah "Pekerja", maka hapus properti "jabatan" dari data sebelum melakukan post
       if (role === "pekerja") {
         delete data.jabatan;
         delete data.nama_perusahaan;
       }
   
       await axios.post(`${process.env.NEXT_PUBLIC_REACT_APP_API_KEY}/users/register/${role}`, data);
-      swal("Success!", "Registration successful!", "success");
-      console.log("Registration successful!");
-      router.push(`/auth/login`);
+      toast.success("Sign Up Success, Please check your email for verification");
+      setTimeout(() => {
+        router.push(`/auth/login`);
+      }, 3000); 
     } catch (error) {
       const errorMessage = error.response?.data?.message || "Unknown error occurred";
-      swal("Error!", `Registration failed: ${errorMessage}`, "error"); 
-      console.error("Registration failed:", error);
+      toast.error( `Registration failed: ${errorMessage}`);
+      console.log(error)
+      
     }
   };
 
@@ -75,6 +78,7 @@ function Register() {
         
         `}
       </style>
+      <ToastContainer />
       <div className={styles["half-screen-container"]}>
         <div className={styles["half-screen-image"]}>
           <div className={styles.overlay} />

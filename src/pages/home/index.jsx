@@ -23,7 +23,7 @@ function Home() {
   const [searchQuery, setSearchQuery] = useState("");
   const [filteredData, setFilteredData] = useState([]);
   const [activePage, setActivePage] = useState(1);
-  const itemsPerPage = 10;
+  const itemsPerPage = 5;
   const [data, setData] = useState([]);
 
   useEffect(() => {
@@ -89,7 +89,7 @@ function Home() {
 
   return (
     <>
-      <main style={{height:1500}}>
+      <main style={{height:1830}}>
         <NavbarLogin />
         <div className={`${styles.fluid}`}>
           <div className="container">

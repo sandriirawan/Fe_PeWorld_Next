@@ -3,6 +3,8 @@ import styles from "../editPekerja/editpekerja.module.css";
 import axios from "axios";
 import Cookies from "js-cookie";
 import swal from "sweetalert";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 function FormPortofolio() {
   const id = Cookies.get("id");
@@ -52,10 +54,12 @@ function FormPortofolio() {
     formDataToSend.append("photo", formData.photo);
 
     axios
-      .post(`${process.env.NEXT_PUBLIC_REACT_APP_API_KEY}/portofolio`, formDataToSend)
+      .post(
+        `${process.env.NEXT_PUBLIC_REACT_APP_API_KEY}/portofolio`,
+        formDataToSend
+      )
       .then((response) => {
-        console.log("Create portofolio Success", response.data);
-        swal("Success", "Portofolio berhasil ditambahkan!", "success");
+        toast.success("Portofolio berhasil ditambahkan!");
         setTimeout(() => {
           window.location.reload();
         }, 1000);
@@ -63,14 +67,10 @@ function FormPortofolio() {
       .catch((error) => {
         const errorMessage =
           error.response?.data?.message || "Unknown error occurred";
-        swal({
-          title: "Portofolio gagal disimpan",
-          text: errorMessage,
-          icon: "error",
-          button: "OK",
-        });
+        toast.error("Portofolio gagal disimpan", errorMessage);
       });
   };
+
   return (
     <div className="input-Portofolio">
       <div className={`card ${styles.cardPortofolio}`}>
@@ -159,7 +159,7 @@ function FormPortofolio() {
                   src={previewImage}
                   alt="Preview"
                   className="m-0 p-0"
-                  style={{ width: "100%", height: ""}}
+                  style={{ width: "100%", height: "" }}
                 />
               )}
               {!previewImage && (

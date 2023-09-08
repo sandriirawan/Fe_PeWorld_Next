@@ -7,7 +7,6 @@ import { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import {getDetailPekerja}  from "../../config/Redux/Action/pekerja";
 
-
 function Pekerja() {
   const userId = Cookies.get("id");
   const fallbackImage = "/Make Your Day.jpg";
@@ -97,24 +96,24 @@ function Pekerja() {
                 <div className={`${styles["sosial-media"]}`}>
                   {data?.email && (
                     <i className={`${styles.bi} bi bi-envelope`}>
-                      <Link href={data.email}>{data.email}</Link>
+                      <a href={`mailto:${data.email}`} target="_blank">{data.email}</a>
                     </i>
                   )}
                   {data?.instagram && (
                     <i className={`${styles.bi} bi bi-instagram`}>
-                      <Link href={data.instagram}>
+                      <Link href={data.instagram} target="_blank">
                         {data.instagram}
                       </Link>
                     </i>
                   )}
                   {data?.github && (
                     <i className={`${styles.bi} bi bi-github`}>
-                      <Link href={data.github}>{data.github}</Link>
+                      <Link href={data.github} target="_blank">{data.github}</Link>
                     </i>
                   )}
                   {data?.linkedin && (
                     <i className={`${styles.bi} bi bi-linkedin`}>
-                      <Link href={data.linkedin}>{data.linkedin}</Link>
+                      <Link href={data.linkedin} target="_blank">{data.linkedin}</Link>
                     </i>
                   )}
                 </div>

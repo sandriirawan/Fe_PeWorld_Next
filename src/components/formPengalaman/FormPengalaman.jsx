@@ -8,6 +8,8 @@ import axios from "axios";
 import Cookies from "js-cookie";
 import CardPengalaman from "../cardPengalaman/CardPengalaman";
 import swal from "sweetalert";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 registerLocale("id", id);
 
@@ -44,25 +46,20 @@ function FormPengalaman() {
         `${process.env.NEXT_PUBLIC_REACT_APP_API_KEY}/pengalaman`,
         dataToSend
       );
-      console.log(response.data);
-      swal("Success", "Pengalaman kerja berhasil ditambahkan!", "success")
+      toast.success("Pengalaman kerja berhasil ditambahkan!");
       setTimeout(() => {
         window.location.reload();
       }, 1000);
     } catch (error) {
       const errorMessage =
         error.response?.data?.message || "Unknown error occurred";
-      swal({
-        title: "Data gagal disimpan",
-        text: errorMessage,
-        icon: "error",
-        button: "OK",
-      });
+      toast.error("Data gagal disimpan", errorMessage);
     }
   };
 
   return (
     <>
+      <ToastContainer />
       <div className="input-pengalaman">
         <div className={`card ${styles.cardPengalaman}`}>
           <div className={` ${styles.titlePengalaman}`}>
@@ -107,7 +104,7 @@ function FormPengalaman() {
               <div className="form-group mr-5">
                 <DatePicker
                   selected={startDate}
-                  onChange={(date) => setStartDate(date)} 
+                  onChange={(date) => setStartDate(date)}
                   placeholderText="Tahun Masuk"
                   dateFormat="dd MMMM yyyy"
                   locale="id"
@@ -118,7 +115,7 @@ function FormPengalaman() {
               <div className="form-group">
                 <DatePicker
                   selected={endDate}
-                  onChange={(date) => setEndDate(date)} 
+                  onChange={(date) => setEndDate(date)}
                   placeholderText="Tahun Keluar"
                   dateFormat="dd MMMM yyyy"
                   locale="id"

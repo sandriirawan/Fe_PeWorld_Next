@@ -133,6 +133,7 @@ function NavbarLogin() {
     width: 32px;
     height: 32px;
     border-radius: 50%;
+    object-fit: cover;
   }
   .home {
     margin-left: 120px;

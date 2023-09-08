@@ -38,6 +38,7 @@
   width: 120px;
   height: 120px;
   border-radius: 50%;
+  object-fit: cover;
   margin-top: -70px;
 }
 
@@ -143,6 +144,7 @@
   box-shadow: 0px 1px 20px 0px #c5c5c540;
   margin-bottom: 20px;
   height: auto;
+  width: 95%;
 }
 
 .card-pengalaman img {
@@ -203,6 +205,7 @@
   width: 200px;
   height: 130px;
   margin-top: 15px;
+  object-fit: cover;
 }
 
 .cardContainer {

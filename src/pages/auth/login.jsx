@@ -5,6 +5,8 @@ import axios from "axios";
 import { useRouter } from "next/router";
 import swal from "sweetalert";
 import Cookies from "js-cookie";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 const Login = () => {
   const router = useRouter();
@@ -24,34 +26,33 @@ const Login = () => {
     e.preventDefault();
 
     axios
-    .post(`${process.env.NEXT_PUBLIC_REACT_APP_API_KEY}/users/login`, data)
-    .then((result) => {
-        Cookies.set("token", result.data.data.token_user);
-        Cookies.set("role", result.data.data.role);
-        Cookies.set("id", result.data.data.id);
-        swal({
-          title: "Login Success",
-          text: "You clicked the button!",
-          icon: "success",
-          button: "OK",
-        }).then(() => {
-          router.push("/");
-        });
+      .post(`${process.env.NEXT_PUBLIC_REACT_APP_API_KEY}/users/login`, data)
+      .then((result) => {
+        if (
+          result.data.message ===
+          "User is unverified. Please verify your account."
+        ) {
+          toast.warning(result.data.message);
+        } else {
+          toast.success("Login successfully");
+          setTimeout(() => {
+            router.push("/");
+          }, 2000);
+          Cookies.set("token", result.data.data.token_user);
+          Cookies.set("role", result.data.data.role);
+          Cookies.set("id", result.data.data.id);
+        }
       })
       .catch((err) => {
         const errorMessage =
-        err.response?.data?.message || "Unknown error occurred"; 
-      swal({
-        title: "Login Error",
-        text: errorMessage,
-        icon: "error",
-        button: "OK",
-      });
+          err.response?.data?.message || "Unknown error occurred";
+        toast.error("Login Error", errorMessage);
       });
   };
 
   return (
     <>
+      <ToastContainer />
       <div className={styles["half-screen-container"]}>
         <div className={styles["half-screen-image"]}>
           <div className={styles.overlay} />

@@ -7,7 +7,7 @@
 .wrap {
   margin-top: -150px;
   width: 357px;
-  height: auto;
+  height: 428px;
   border-radius: 8px;
   border-radius: 8px;
 }
@@ -23,6 +23,7 @@
   width: 120px;
   height: 120px;
   border-radius: 50%;
+  object-fit: cover;
 }
 
 .edit {
