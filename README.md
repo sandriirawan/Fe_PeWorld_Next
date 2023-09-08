@@ -89,67 +89,33 @@ REACT_APP_BACKEND = [BACKEND_URL]
 <!-- ROADMAP -->
 
 
-
 ## Screenshots
 
 <table>
  <tr>
-    <td><img width="350px" src="https://github.com/sandriirawan/Fe_Blanja_React/assets/80002249/f200a7b9-264b-49df-85e7-f4b9c4755842" border="0" alt="1" /></td>
-    <td> <img width="350px" src="https://github.com/sandriirawan/Fe_Blanja_React/assets/80002249/278427ab-7a4a-4501-8a5b-2dc6db37113d"  border="0"  alt="2" /></td>
+    <td><img width="350px" src="https://github.com/sandriirawan/Fe_PeWorld_Next/assets/80002249/bc9b2423-26d9-413f-8bab-742ac90fa38a" border="0" alt="1" /></td>
+    <td> <img width="350px" src="https://github.com/sandriirawan/Fe_PeWorld_Next/assets/80002249/178978e1-1332-4b97-b5d5-7eb6dfcf94a4"  border="0"  alt="2" /></td>
   </tr>
    <tr>
-    <td>Login Customer</td>
-    <td>Login Seller</td>
+    <td>Masuk</td>
+    <td>Daftar</td>
   </tr>
 
   <tr>
-    <td><img width="350px"  src="https://github.com/sandriirawan/Fe_Blanja_React/assets/80002249/61e09bb4-1fc9-47ac-9e35-dfbb6e5858ba" border="0" alt="3" /> </td>
-     <td><img width="350px"  src="https://github.com/sandriirawan/Fe_Blanja_React/assets/80002249/d1e44a55-7b23-450e-a2d2-7952b3734427"  border="0" alt="4" /></td>
+    <td><img width="350px"  src="https://github.com/sandriirawan/Fe_PeWorld_Next/assets/80002249/879ec4a0-3cfc-42fd-9d2c-3c1389076d00" border="0" alt="3" /> </td>
+     <td><img width="350px"  src="https://github.com/sandriirawan/Fe_PeWorld_Next/assets/80002249/4629939f-acbb-44ae-8aaa-fd66f3379c15"  border="0" alt="4" /></td>
   </tr>
    <tr>
-     <td>Register Customer</td>
-    <td>Register Seller</td>
+     <td>Landing Page</td>
+    <td>Home</td>
   </tr>
   <tr>
-    <td><img width="350px"  src="https://github.com/sandriirawan/Fe_Blanja_React/assets/80002249/fdd9fde8-f9dd-4d81-9896-c14bb8ad6528" border="0" alt="3" /> </td>
-     <td><img width="350px"  src="https://github.com/sandriirawan/Fe_Blanja_React/assets/80002249/f0dbf92a-7c54-4917-a5a6-c1d81af52505"  border="0" alt="4" /></td>
+    <td><img width="350px"  src="https://github.com/sandriirawan/Fe_PeWorld_Next/assets/80002249/43c63ac7-d3bf-4ab3-8418-cd848ca849b3" border="0" alt="3" /> </td>
+     <td><img width="350px"  src="https://github.com/sandriirawan/Fe_PeWorld_Next/assets/80002249/1d84d4f9-8ca8-4ae3-affb-cbf799d15341"  border="0" alt="4" /></td>
   </tr>
    <tr>
-    <td>Landing Page</td>
-     <td>New Product</td>
-  </tr>
-
-  <tr>
-    <td><img width="350px"  src="https://github.com/sandriirawan/Fe_Blanja_React/assets/80002249/5d89eebe-4eb3-4e0a-ae58-7a0ce8520404" border="0" alt="3" /> </td>
-     <td><img width="350px"  src="https://github.com/sandriirawan/Fe_Blanja_React/assets/80002249/3efdfdbb-ce56-430b-ac72-d7df1777839d"  border="0" alt="4" /></td>
-  </tr>
-   <tr>
-    <td>Detail Product</td>
-     <td>My Bag</td>
-  </tr>
-  <tr>
-    <td><img width="350px"  src="https://github.com/sandriirawan/Fe_Blanja_React/assets/80002249/4f3222c9-03ee-421b-b3eb-b4a13ae64ddb" border="0" alt="3" /> </td>
-     <td><img width="350px"  src="https://github.com/sandriirawan/Fe_Blanja_React/assets/80002249/b9af572b-b559-4c2e-a10a-770caef1e420"  border="0" alt="4" /></td>
-  </tr>
-   <tr>
-     <td>Checkout</td>
-    <td>My Order</td>
-  </tr>
-    <tr>
-    <td><img width="350px"  src="https://github.com/sandriirawan/Fe_Blanja_React/assets/80002249/d9645191-3645-4a4d-b1bf-218ae9a7199a" border="0" alt="3" /> </td>
-     <td><img width="350px"  src="https://github.com/sandriirawan/Fe_Blanja_React/assets/80002249/b2f38b11-1a27-4dc1-a518-a1ee07a47dcb"  border="0" alt="4" /></td>
-  </tr>
-   <tr>
-     <td>Edit Seller Profile</td>
-    <td>Order Completed</td>
-  </tr>
-    <tr>
-    <td><img width="350px"  src="https://github.com/sandriirawan/Fe_Blanja_React/assets/80002249/cea225f3-f29c-4d9c-93e5-ee952cb71ec8" border="0" alt="3" /> </td>
-     <td><img width="350px"  src="https://github.com/sandriirawan/Fe_Blanja_React/assets/80002249/2fb4d7a7-84a3-427c-998e-0e4509ed637c"  border="0" alt="4" /></td>
-  </tr>
-   <tr>
-     <td>My Product</td>
-    <td>Update Product</td>
+    <td>Pekerja Profile</td>
+     <td>Biodata pekerja</td>
   </tr>
 
 </table>
@@ -168,8 +134,8 @@ Contributions are what make the open source community such an amazing place to b
 
 ## Related Project
 
-:rocket: [`Backend Hire Job Peworld`](https://github.com/sandriirawan/Be_Blanja)
+:rocket: [`Backend Hire Job Peworld`](https://github.com/sandriirawan/Be_PeWorld)
 
-:rocket: [`Frontend Hire Job Peworld`](https://github.com/sandriirawan/Fe_Blanja_React)
+:rocket: [`Frontend Hire Job Peworld`](https://github.com/sandriirawan/Fe_PeWorld_Next)
 
 :rocket: [`Demo  Hire Job Peworld Online Shop`](https://peworld-six.vercel.app/)
