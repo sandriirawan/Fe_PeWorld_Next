@@ -39,7 +39,7 @@ function App() {
                   <br />
                   In euismod ipsum et dui rhoncus auctor.
                 </p>
-                <Link href={"/home"}>
+                <Link href={"/auth/login"}>
                 <button className="btn btn-mulai">Mulai Dari Sekarang</button>
                 </Link>
               </div>
@@ -256,7 +256,9 @@ function App() {
                 Lorem ipsum <br />
                 dolor sit amet
               </h1>
+              <Link href={"/auth/login"}>
               <button className="btn btn-mulai">Mulai Dari Sekarang</button>
+              </Link>
             </div>
           </div>
       </section>
@@ -270,7 +272,7 @@ function App() {
         
               .section1 .container {
                 height: 100%;
-                margin-top:30px
+              
               }
         
               .section1 .row {

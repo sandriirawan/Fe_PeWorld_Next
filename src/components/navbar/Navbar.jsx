@@ -40,7 +40,6 @@ function Navbar() {
         {`
             .container-fluid{
                 background-color: white;
-                box-shadow: 0px 10px 50px 0px #84848440;
             }
             .navbar {
                 padding: 20px 0;
