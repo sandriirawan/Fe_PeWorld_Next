@@ -8,7 +8,7 @@ import NavbarLogin from "@/components/navbarLogin/Navbar";
 import Pagination from "react-bootstrap/Pagination";
 
 function PekerjaProfile() {
-  const [userData, setUserData] = useState(null);
+  const [userData, setUserData] = useState("");
   const router = useRouter();
   const { id } = router.query;
   const fallbackImage = "/Make Your Day.jpg";
@@ -43,6 +43,7 @@ function PekerjaProfile() {
         console.error("Error fetching data:", error);
       });
   }, []);
+
 
   const calculateMonthDifference = (startDate, endDate) => {
     const start = new Date(startDate);
@@ -128,16 +129,19 @@ function PekerjaProfile() {
                 <h2 className={`${styles.nama}`}>{userData?.name}</h2>
                 <h6 className={`${styles.posisi}`}>{userData?.job_desk}</h6>
                 <p className={`${styles.address}`}>
-                  <i className="bi bi-geo-alt">
-                    {userData?.provinsi}, {userData?.kota}
-                  </i>
+                {userData?.linkedin && (
+                      <i className="bi bi-geo-alt">
+                        {userData.kota}, {userData.provinsi}
+                      </i>
+                    )}
                 </p>
                 <p className={`${styles["status-pekerjaan"]}`}>Freelancer</p>
                 <p className={`${styles.deskripsi} col-md-7`}>
                   {userData?.deskripsi_singkat}
                 </p>
                 <div className={`${styles["wrap-button"]}`}>
-                  <Link href={"/hire"}>
+                  <Link href={`/hire/${userData?.users_id}`}>
+                    {" "}
                     <button className={`${styles["btn"]} ${styles.buttonHire}`}>
                       Hire
                     </button>

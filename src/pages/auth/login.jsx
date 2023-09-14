@@ -41,6 +41,7 @@ const Login = () => {
           Cookies.set("token", result.data.data.token_user);
           Cookies.set("role", result.data.data.role);
           Cookies.set("id", result.data.data.id);
+          Cookies.set("nama_perusahaan", result.data.data.nama_perusahaan);
         }
       })
       .catch((err) => {

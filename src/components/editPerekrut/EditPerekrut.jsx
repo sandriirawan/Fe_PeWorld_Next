@@ -3,6 +3,8 @@ import React, { useEffect, useState } from "react";
 import axios from "axios";
 import Cookies from 'js-cookie';
 import { useRouter } from "next/router";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 
 function EditPerekrut() {
@@ -11,6 +13,7 @@ function EditPerekrut() {
   const [previewImage, setPreviewImage] = useState();
   const userId = Cookies.get('id')
   const router = useRouter();
+  console.log(userId)
 
   const handleBatal = () => {
     router.push(`/profile/${userId}`);
@@ -75,8 +78,10 @@ function EditPerekrut() {
     axios
       .put(`${process.env.NEXT_PUBLIC_REACT_APP_API_KEY}/perekrut/profile/edit/${userId}`, formData)
       .then((response) => {
-        // swal("Data berhasil disimpan!")
-        router.push(`/profile/${userId}`); 
+        toast.success("Data berhasil disimpan!");
+        setTimeout(() => {
+          router.push(`/profile/${userId}`);
+        }, 3000);
       })
       .catch((error) => {
         const errorMessage =
@@ -91,6 +96,7 @@ function EditPerekrut() {
   };
   return (
     <>
+          <ToastContainer />
         <div className={styles.sampul} />
         <div className="container">
           <div className="row">

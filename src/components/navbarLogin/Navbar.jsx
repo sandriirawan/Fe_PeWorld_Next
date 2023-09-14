@@ -24,6 +24,8 @@ function NavbarLogin() {
     Cookies.remove("role");
     Cookies.remove("token");
     Cookies.remove("id");
+    Cookies.remove("nama_perusahaan");
+    Cookies.remove("perusahaan");
     router.push("/auth/login");
   };
 

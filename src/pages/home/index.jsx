@@ -104,7 +104,7 @@ function Home() {
             >
               <input
                 className={`form-control control ${styles.control}`}
-                type="search"
+                type="text"
                 placeholder="Search"
                 aria-label="Search"
                 value={searchQuery}
