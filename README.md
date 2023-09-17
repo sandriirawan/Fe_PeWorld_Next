@@ -94,8 +94,8 @@ REACT_APP_BACKEND = [BACKEND_URL]
 
 <table>
  <tr>
-    <td><img style="height: auto; max-width: 350px;" src="https://github.com/sandriirawan/Fe_PeWorld_Next/assets/80002249/68492fca-98b9-483c-a1c5-382df687e2fa" border="0" alt="1" /></td>
-    <td> <img style="height: auto; max-width: 350px;" src="https://github.com/sandriirawan/Fe_PeWorld_Next/assets/80002249/393e3d7b-bae6-437f-a028-1c0223dcdd39"  border="0"  alt="2" /></td>
+    <td><img width="350px" src="https://github.com/sandriirawan/Fe_PeWorld_Next/assets/80002249/68492fca-98b9-483c-a1c5-382df687e2fa" border="0" alt="1" /></td>
+    <td> <img width="350px" src="https://github.com/sandriirawan/Fe_PeWorld_Next/assets/80002249/393e3d7b-bae6-437f-a028-1c0223dcdd39"  border="0"  alt="2" /></td>
   </tr>
    <tr>
     <td>Masuk</td>
@@ -103,26 +103,27 @@ REACT_APP_BACKEND = [BACKEND_URL]
   </tr>
 
   <tr>
-    <td><img style="height: auto; max-width: 350px;"  src="https://github.com/sandriirawan/Fe_PeWorld_Next/assets/80002249/7ed5a44f-9dc2-42d1-9f23-178f7829c8bd" border="0" alt="3" /> </td>
-     <td><img style="height: auto; max-width: 350px;"  src="https://github.com/sandriirawan/Fe_PeWorld_Next/assets/80002249/5f316532-2968-42b4-afd2-47d1c3ac7647"  border="0" alt="4" /></td>
+    <td><img width="350px"  src="https://github.com/sandriirawan/Fe_PeWorld_Next/assets/80002249/7ed5a44f-9dc2-42d1-9f23-178f7829c8bd" border="0" alt="3" /> </td>
+     <td><img width="350px" src="https://github.com/sandriirawan/Fe_PeWorld_Next/assets/80002249/a546fe9b-dae5-4157-add8-6fef08fd6698"  border="0" alt="4" /></td>
+    
   </tr>
    <tr>
      <td>Landing Page</td>
-    <td>Home</td>
+    <td>Hire</td>
   </tr>
   <tr>
-    <td><img style="height: auto; max-width: 350px;"  src="https://github.com/sandriirawan/Fe_PeWorld_Next/assets/80002249/4f7b5187-46c2-442c-9501-1a8089b51bcc" border="0" alt="3" /> </td>
-     <td><img style="height: auto; max-width: 350px;"  src="https://github.com/sandriirawan/Fe_PeWorld_Next/assets/80002249/eb59c3f3-cdbe-45c2-a2fe-232ed03211e0"  border="0" alt="4" /></td>
+    <td><img width="350px"  src="https://github.com/sandriirawan/Fe_PeWorld_Next/assets/80002249/4f7b5187-46c2-442c-9501-1a8089b51bcc" border="0" alt="3" /> </td>
+     <td><img width="350px"  src="https://github.com/sandriirawan/Fe_PeWorld_Next/assets/80002249/eb59c3f3-cdbe-45c2-a2fe-232ed03211e0"  border="0" alt="4" /></td>
   </tr>
    <tr>
     <td>Pekerja Profile</td>
      <td>perekrut Profile</td>
   </tr>
   <tr>
-    <td><img style="height: auto; max-width: 350px;"  src="https://github.com/sandriirawan/Fe_PeWorld_Next/assets/80002249/a546fe9b-dae5-4157-add8-6fef08fd6698" border="0" alt="3" /> </td>
+    <td><img width="350px"  src="https://github.com/sandriirawan/Fe_PeWorld_Next/assets/80002249/5f316532-2968-42b4-afd2-47d1c3ac7647" border="0" alt="3" /> </td>
   </tr>
    <tr>
-    <td>Hire</td>
+    <td>Home</td>
   </tr>
 </table>
 
