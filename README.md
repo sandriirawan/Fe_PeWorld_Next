@@ -103,12 +103,12 @@ REACT_APP_BACKEND = [BACKEND_URL]
   </tr>
 
   <tr>
-    <td><img width="350px"  src="https://github.com/sandriirawan/Fe_PeWorld_Next/assets/80002249/7ed5a44f-9dc2-42d1-9f23-178f7829c8bd" border="0" alt="3" /> </td>
+    <td><img width="350px" src="https://github.com/sandriirawan/Fe_PeWorld_Next/assets/80002249/5f316532-2968-42b4-afd2-47d1c3ac7647" border="0" alt="3" /> </td>
      <td><img width="350px" src="https://github.com/sandriirawan/Fe_PeWorld_Next/assets/80002249/a546fe9b-dae5-4157-add8-6fef08fd6698"  border="0" alt="4" /></td>
     
   </tr>
    <tr>
-     <td>Landing Page</td>
+     <td>Home</td>
     <td>Hire</td>
   </tr>
   <tr>
@@ -120,10 +120,11 @@ REACT_APP_BACKEND = [BACKEND_URL]
      <td>perekrut Profile</td>
   </tr>
   <tr>
-    <td><img width="350px"  src="https://github.com/sandriirawan/Fe_PeWorld_Next/assets/80002249/5f316532-2968-42b4-afd2-47d1c3ac7647" border="0" alt="3" /> </td>
+    <td><img width="350px" src="https://github.com/sandriirawan/Fe_PeWorld_Next/assets/80002249/7ed5a44f-9dc2-42d1-9f23-178f7829c8bd"  border="0" alt="3" /> </td>
+     
   </tr>
    <tr>
-    <td>Home</td>
+    <td>Landing Page</td>
   </tr>
 </table>
 
