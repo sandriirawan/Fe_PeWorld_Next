@@ -26,11 +26,13 @@ function EditPekerja() {
     const getdata = async () => {
       if (userId) {
         await axios
-          .get(`http://localhost:8000/pekerja/profile/${userId}`)
+          .get(
+            `${process.env.NEXT_PUBLIC_REACT_APP_API_KEY}/pekerja/profile/${userId}`
+          )
           .then((response) => {
             setData(response.data.data[0]);
             setPhoto(response.data.data[0].foto_pekerja);
-            console.log(response.data);
+            console.log(response.data)
           })
           .catch((error) => {
             console.error("Error fetching user data:", error);
@@ -77,7 +79,10 @@ function EditPekerja() {
     formData.append("foto_pekerja", getPhoto);
     toast.dismiss();
     await axios
-      .put(`${process.env.NEXT_PUBLIC_REACT_APP_API_KEY}/${userId}`, formData)
+      .put(
+        `${process.env.NEXT_PUBLIC_REACT_APP_API_KEY}/pekerja/profile/edit/${userId}`,
+        formData
+      )
       .then((response) => {
         toast.success("Data berhasil disimpan!");
         setTimeout(() => {
