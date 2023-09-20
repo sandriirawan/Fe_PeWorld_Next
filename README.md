@@ -107,23 +107,23 @@ REACT_APP_BACKEND = [BACKEND_URL]
     <td>Hire</td>
   </tr>
   <tr>
-    <td><img width="350px" src="https://github.com/sandriirawan/Fe_PeWorld_Next/assets/80002249/5f316532-2968-42b4-afd2-47d1c3ac7647" border="0" alt="3" /> </td>
+    <td><img width="350px" src="https://github.com/sandriirawan/Fe_PeWorld_Next/assets/80002249/013c2be8-091d-4dd1-a889-dd9acc92bcf4" border="0" alt="3" /> </td>
      <td><img width="350px" src="https://github.com/sandriirawan/Fe_PeWorld_Next/assets/80002249/a546fe9b-dae5-4157-add8-6fef08fd6698"  border="0" alt="4" /></td>
   </tr>
    <tr>
     <td>Pekerja Profile</td>
      <td>perekrut Profile</td>
   </tr>
-    <td><img width="350px" src="https://github.com/sandriirawan/Fe_PeWorld_Next/assets/80002249/121ed8e4-699f-4b2e-be7c-35673afb5930" border="0" alt="3" /> </td>
-     <td><img width="350px" src="https://github.com/sandriirawan/Fe_PeWorld_Next/assets/80002249/7172ba72-11dc-430e-b1b6-474029db4309"  border="0" alt="4" /></td>
+    <td><img width="350px" src="https://github.com/sandriirawan/Fe_PeWorld_Next/assets/80002249/df1ccecf-64f8-49e1-8176-3cbeea787c2c" border="0" alt="3" /> </td>
+     <td><img width="350px" src="https://github.com/sandriirawan/Fe_PeWorld_Next/assets/80002249/a19e5b9e-c24b-45fa-a894-8ddf19aac861"  border="0" alt="4" /></td>
   </tr>
    <tr>
     <td>Edit Pekerja Profile</td>
      <td>Edit perekrut Profile</td>
   </tr>
   <tr>
-    <td><img width="350px"  src="https://github.com/sandriirawan/Fe_PeWorld_Next/assets/80002249/4f7b5187-46c2-442c-9501-1a8089b51bcc" border="0" alt="3" /> </td>
-     <td><img width="350px"  src="https://github.com/sandriirawan/Fe_PeWorld_Next/assets/80002249/eb59c3f3-cdbe-45c2-a2fe-232ed03211e0"  border="0" alt="4" /></td>
+    <td><img width="350px"  src="https://github.com/sandriirawan/Fe_PeWorld_Next/assets/80002249/d2d5386e-9ac4-496b-a37a-d33ae7df38d2" border="0" alt="3" /> </td>
+     <td><img width="350px"  src="https://github.com/sandriirawan/Fe_PeWorld_Next/assets/80002249/1ea1aba5-93aa-473f-8fd4-54acc1988613"  border="0" alt="4" /></td>
   </tr>
   <tr>
     <td>Landing Page</td>
