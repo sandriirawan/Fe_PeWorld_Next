@@ -114,6 +114,14 @@ REACT_APP_BACKEND = [BACKEND_URL]
     <td>Pekerja Profile</td>
      <td>perekrut Profile</td>
   </tr>
+    <tr>
+    <td><img width="350px" src="https://github.com/sandriirawan/Fe_PeWorld_Next/assets/80002249/5f316532-2968-42b4-afd2-47d1c3ac7647" border="0" alt="3" /> </td>
+     <td><img width="350px" src="https://github.com/sandriirawan/Fe_PeWorld_Next/assets/80002249/a546fe9b-dae5-4157-add8-6fef08fd6698"  border="0" alt="4" /></td>
+  </tr>
+   <tr>
+    <td>Edit Pekerja Profile</td>
+     <td>Edit perekrut Profile</td>
+  </tr>
   <tr>
     <td><img width="350px"  src="https://github.com/sandriirawan/Fe_PeWorld_Next/assets/80002249/4f7b5187-46c2-442c-9501-1a8089b51bcc" border="0" alt="3" /> </td>
      <td><img width="350px"  src="https://github.com/sandriirawan/Fe_PeWorld_Next/assets/80002249/eb59c3f3-cdbe-45c2-a2fe-232ed03211e0"  border="0" alt="4" /></td>

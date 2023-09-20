@@ -80,7 +80,7 @@ function EditPekerja() {
     toast.dismiss();
     await axios
       .put(
-        `http://localhost:8000/pekerja/profile/edit/${userId}`,
+        `${process.env.NEXT_PUBLIC_REACT_APP_API_KEY}/${userId}`,
         formData
       )
       .then((response) => {
