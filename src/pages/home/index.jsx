@@ -23,7 +23,7 @@ function Home() {
   const [searchQuery, setSearchQuery] = useState("");
   const [filteredData, setFilteredData] = useState([]);
   const [activePage, setActivePage] = useState(1);
-  const itemsPerPage = 5;
+  const itemsPerPage = 4;
   const [data, setData] = useState([]);
 
   useEffect(() => {

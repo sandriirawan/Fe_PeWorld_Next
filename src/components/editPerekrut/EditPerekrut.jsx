@@ -29,7 +29,10 @@ function EditPerekrut() {
             setPhoto(response.data.data[0].foto_perusahaan)
           })
           .catch((error) => {
-            console.error("Error fetching user data:", error);
+            console.error("Error:", error);
+            const errorMessage = error.response?.data?.message || "Unknown error occurred";
+            console.log(errorMessage);
+            // Tampilkan pesan kesalahan dengan cara yang sesuai, seperti menggunakan swal atau pesan toast
           });
       }
     }
