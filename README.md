@@ -32,7 +32,7 @@
 
 ## About The Project
 
-The Blanja e-commerce website project is an online platform designed to make it easier for users to make buying and selling transactions online. This website was developed using React.js and Redux frontend technologies to optimize display performance and efficiency as well as state management. On the backend, this website uses Express.js technology which functions as a server to manage data taken from Cloudinary. Cloudinary functions as an image data store so that it allows users to easily view images of each product being sold.
+Peworld Hirejob is a website specifically designed to help recruiters find and recruit quality talent according to their interests and needs. The platform provides various features and tools that make it easier for recruiters to identify, assess and contact potential job candidates. With Peworld Hirejob, recruiters can easily run an efficient and effective recruitment process, enabling them to find the most suitable individuals for available positions.
 
 ### Built With
 
